@@ -1,0 +1,120 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3e5f5;
+  color: #212121;
+}
+
+header {
+  background: linear-gradient(to right, #7b1fa2, #9c27b0);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  position: relative;
+}
+
+header .profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-bottom: 10px;
+  animation: zoom-in-out 3s infinite ease-in-out;
+}
+
+header .quote {
+  font-style: italic;
+  margin-top: 10px;
+  font-size: 1.3em;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #7b1fa2;
+  position: relative;
+  animation: slide-from-bottom 1.5s ease-in-out;
+}
+
+ul {
+  list-style-type: circle;
+  margin: 10px 0 0 20px;
+  color: #424242;
+  animation: fade-from-left 2s ease-in;
+}
+
+/* Animations */
+
+/* Zoom In-Out for the Image */
+@keyframes zoom-in-out {
+  0%, 100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+}
+
+/* Slide-In from Bottom for Headings */
+@keyframes slide-from-bottom {
+  from {
+      transform: translateY(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Fade-In from Left for Lists */
+@keyframes fade-from-left {
+  from {
+      transform: translateX(-50%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+/* Glowing Text Animation */
+footer p {
+  color: #ffffff;
+  text-shadow: 0 0 10px #ff80ab, 0 0 20px #ff80ab, 0 0 30px #ff4081, 0 0 40px #ff4081;
+  animation: glow-text 2s infinite ease-in-out;
+}
+
+/* Glow Effect */
+@keyframes glow-text {
+  0%, 100% {
+      text-shadow: 0 0 10px #ff80ab, 0 0 20px #ff80ab, 0 0 30px #ff4081, 0 0 40px #ff4081;
+  }
+  50% {
+      text-shadow: 0 0 20px #ff80ab, 0 0 30px #ff4081, 0 0 50px #ff4081, 0 0 60px #ff4081;
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #7b1fa2;
+  color: white;
+  padding: 10px 0;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
